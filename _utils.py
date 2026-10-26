@@ -33,7 +33,7 @@ def read_cli_args() -> argparse.Namespace:
 
     args = parser.parse_args()
     if args.save is not None:
-        args.save = Path(args.save)
+        args.save = Path(args.save[0])
 
     return args
 
